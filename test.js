@@ -1,10 +1,8 @@
-# ali-top-client
-alibaba top client 
+/**
+ * Module dependencies.
+ */
 
-## Quick Examples
-
-```js
-TopClient = require( 'ali-top-sdk' ).TopClient;
+TopClient = require( './topClient' ).TopClient;
 
 var client = new TopClient({
      'appkey' : 'appkey' ,
@@ -23,4 +21,3 @@ client.execute( 'alibaba.aliqin.fc.sms.num.send' , {
      if (!error) console.log(response);
      else console.log(error);
 });
-```
